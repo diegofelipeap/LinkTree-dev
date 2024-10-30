@@ -1,14 +1,16 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #121212;
     color: #fff;
-    height: 100vh;
+    height: 116vh;
     margin: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-main{
+
+main {
     background-color: #1e1e1e;
     border-radius: 10px;
     padding: 20px;
@@ -17,28 +19,51 @@ main{
     max-width: 80%;
 }
 
-figure>img{
+figure>img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #0ab56b;
+    border: 3px solid #13bb86;
 }
 
-h1{
-    font-size: 25px;
+h1 {
+    font-size: 18px;
 }
 
-span{
-    color: #07f59e;
+span {
+    color: #13bb86;
 }
 
-.subtitle{
+.subtitle {
     margin-bottom: 30px;
     font-size: 16px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
 
-a{
+.fade-out {
+    opacity: 0;
+}
+
+.static-text {
+    font-weight: bold;
+}
+
+.typewriter-container {
+    display: inline-block;
+    text-align: left;
+}
+
+.typewriter-text {
+    display: inline-block;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+a {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -49,14 +74,9 @@ a{
     margin: 20px 0;
     cursor: pointer;
 
-    p{
-        color:#fff;
-        width: 80px;
+    p {
+        color: #fff;
+        width: 120px;
         text-align: center;
     }
-}
-
-a:hover{
-    transition: 0.8s;
-        background-color: #10b277;
 }
